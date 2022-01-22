@@ -3,10 +3,13 @@ import "./App.css";
 import Welcome from "./components/Welcome";
 
 function App() {
-  const name = "Nicole";
+  const user = {
+    firstName: "Nicole",
+    lastName: "Dreon",
+  };
   return (
     <div className='App'>
-      <Welcome name={name} />
+      <Welcome firstName={user.firstName} lastName={user.lastName} />
     </div>
   );
 }
