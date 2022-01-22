@@ -3,9 +3,10 @@ import "./App.css";
 import Welcome from "./components/Welcome";
 
 function App() {
+  const name = "Nicole";
   return (
     <div className='App'>
-      <Welcome />
+      <Welcome name={name} />
     </div>
   );
 }
