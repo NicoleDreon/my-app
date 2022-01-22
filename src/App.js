@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
 
@@ -7,9 +6,14 @@ function App() {
     firstName: "Nicole",
     lastName: "Dreon",
   };
+  const test = 342;
   return (
     <div className='App'>
-      <Welcome firstName={user.firstName} lastName={user.lastName} />
+      <Welcome
+        firstName={user.firstName}
+        lastName={user.lastName}
+        test={test}
+      />
     </div>
   );
 }
